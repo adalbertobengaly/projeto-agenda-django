@@ -1,0 +1,56 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "editor.formatOnSave": false,
+    "editor.rulers": [80, 120],
+    "explorer.compactFolders": false,
+    "[javascript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[javascriptreact]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[python]": {
+      "editor.formatOnType": true
+    },
+    "code-runner.runInTerminal": true,
+    "code-runner.clearPreviousOutput": true,
+    "window.menuBarVisibility": "compact",
+    "window.titleBarStyle": "custom",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "workbench.colorTheme": "OM Theme (Night Owl Italic)",
+    "files.associations": {
+      "*.js": "javascript",
+      "*.jsx": "javascriptreact",
+      "*.xml": "html",
+      "*.svg": "html",
+      "*.html": "html",
+      "django-html": "html",
+      "**/*.html": "html",
+      "**/templates/**/*.html": "django-html",
+      "**/base_templates/**/*.html": "django-html",
+      "**/requirements{/**,*}.{txt,in}": "pip-requirements",
+      "**/templates/**/*.tsx": "typescriptreact",
+      "**/templates/**/*.ts": "typescript"
+    },
+    "emmet.includeLanguages": {
+      "django-html": "html",
+      "javascript": "javascriptreact",
+      "typescript": "typescriptreact"
+    },
+    "[django-html]": {
+      "editor.formatOnSave": false,
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+      }
+    },
+  }
+  

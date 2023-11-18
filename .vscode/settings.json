@@ -6,17 +6,20 @@
     "editor.formatOnSave": false,
     "editor.rulers": [80, 120],
     "explorer.compactFolders": false,
-    "[javascript]": {
-      "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
     "[html]": {
       "editor.defaultFormatter": "vscode.html-language-features"
     },
-    "[javascriptreact]": {
-      "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
     "[python]": {
-      "editor.formatOnType": true
+      "editor.formatOnType": true,
+      "editor.defaultFormatter": "ms-python.autopep8",
+      "editor.tabSize": 4,
+      "editor.insertSpaces": true,
+      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.fixAll.unusedImports": true,
+        "source.organizeImports": true,
+      }
     },
     "code-runner.runInTerminal": true,
     "code-runner.clearPreviousOutput": true,

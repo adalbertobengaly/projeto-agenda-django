@@ -11,6 +11,11 @@ from django.utils import timezone
 
 
 class Category(models.Model):
+    class Meta:
+        # https://docs.djangoproject.com/pt-br/4.2/ref/models/options/
+        verbose_name = 'Category'  # default -> Já é o mesmo nome da classe
+        verbose_name_plural = 'Categories'
+
     name = models.CharField(max_length=50)
 
     def __str__(self) -> str:

@@ -6,8 +6,8 @@ from django.utils import timezone
 # email (email), created_date (date), description (text)
 
 # Depois
-# category (foreign key), show (boolean), owner (foreign key)
-# picture (imagem)
+# category (foreign key), show (boolean), picture (imagem)
+# owner (foreign key)
 
 
 class Contact(models.Model):
@@ -17,6 +17,8 @@ class Contact(models.Model):
     email = models.EmailField(max_length=254, blank=True)
     created_date = models.DateTimeField(default=timezone.now)
     description = models.TextField(blank=True)
+    show = models.BooleanField(default=True)
+    picture = models.ImageField(blank=True, upload_to='pictures/%Y/%m/')
 
     def __str__(self):
         return f'{self.first_name} {self.last_name} - {self.email}'

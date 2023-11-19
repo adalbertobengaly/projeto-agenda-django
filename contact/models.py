@@ -1,12 +1,13 @@
 from django.db import models
 from django.utils import timezone
+from django.contrib.auth.models import User
 
 # id (primary key - automático)
 # first_name (string), last_name (string), phone (string)
 # email (email), created_date (date), description (text)
+# category (foreign key), show (boolean), picture (imagem)
 
 # Depois
-# category (foreign key), show (boolean), picture (imagem)
 # owner (foreign key)
 
 
@@ -33,6 +34,11 @@ class Contact(models.Model):
     picture = models.ImageField(blank=True, upload_to='pictures/%Y/%m/')
     category = models.ForeignKey(
         Category,
+        on_delete=models.SET_NULL,
+        blank=True, null=True
+    )
+    owner = models.ForeignKey(
+        User,
         on_delete=models.SET_NULL,
         blank=True, null=True
     )
